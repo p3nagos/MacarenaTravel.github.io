@@ -1,0 +1,6 @@
+{
+  "name": "Macarena Travel",
+  "description": "Agencia de viajes con reservas integradas de vuelos y paquetes, validación automática con aerolíneas, blog de destinos, chat inteligente, pasarela de pago segura y notificaciones en tiempo real.",
+  "requestFramePermissions": ["notifications"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 450" width="100%" height="100%">
+  <defs>
+    <!-- Sun Gradient -->
+    <linearGradient id="sunGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD100"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <!-- Ocean Waves Gradient -->
+    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    <!-- Orange Orbit Ring Gradient -->
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FB923C"/>
+      <stop offset="40%" stop-color="#F97316"/>
+      <stop offset="100%" stop-color="#EA580C"/>
+    </linearGradient>
+    <!-- Pin Base Navy -->
+    <linearGradient id="navyPinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A8A"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <!-- Glow filter -->
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#softShadow)">
+    <!-- Bottom Pin Point (Location marker base) -->
+    <path d="M 130 330 L 200 440 L 260 335 Z" fill="url(#navyPinGrad)" />
+
+    <!-- Main Circular Disk (Sun & Sky) -->
+    <circle cx="200" cy="190" r="140" fill="url(#sunGrad)"/>
+
+    <!-- Palm Tree Silhouette (black/dark navy) -->
+    <g fill="#0F172A">
+      <!-- Trunk with natural curve -->
+      <path d="M 148 235 Q 165 190 178 140 Q 183 140 181 143 Q 170 190 156 236 Z" />
+      <!-- Palm fronds radiating from top -->
+      <!-- Frond 1 (left down) -->
+      <path d="M 178 140 Q 150 145 130 165 Q 148 152 178 140 Z" />
+      <!-- Frond 2 (top left) -->
+      <path d="M 178 140 Q 155 120 135 125 Q 155 130 178 140 Z" />
+      <!-- Frond 3 (top center) -->
+      <path d="M 178 140 Q 175 105 185 100 Q 185 120 178 140 Z" />
+      <!-- Frond 4 (top right) -->
+      <path d="M 178 140 Q 205 115 225 120 Q 200 130 178 140 Z" />
+      <!-- Frond 5 (right down) -->
+      <path d="M 178 140 Q 215 140 230 160 Q 205 148 178 140 Z" />
+      <!-- Frond leaves texture -->
+      <path d="M 145 150 L 138 162 M 155 142 L 148 155 M 165 138 L 160 150 M 190 130 L 200 142 M 200 135 L 215 148" stroke="#0F172A" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Ocean Blue & Sky Waves -->
+    <!-- Back Wave -->
+    <path d="M 160 230 C 180 200 240 170 280 210 C 295 225 310 200 315 190 C 330 220 338 245 330 270 C 290 260 230 290 160 230 Z" fill="url(#waveGrad)"/>
+    <!-- Crest Foam & Front Wave -->
+    <path d="M 85 240 C 120 220 180 260 240 225 C 280 200 305 210 320 240 C 275 295 190 320 100 295 C 80 280 75 255 85 240 Z" fill="#38BDF8"/>
+    <!-- Splash crest drops -->
+    <circle cx="295" cy="180" r="5" fill="#38BDF8"/>
+    <circle cx="310" cy="175" r="4" fill="#38BDF8"/>
+    <circle cx="280" cy="165" r="3.5" fill="#38BDF8"/>
+
+    <!-- Airplane Jet Trail (White curving swoosh) -->
+    <path d="M 80 120 C 60 230 100 320 280 340 C 250 345 120 320 95 230 C 85 190 90 140 110 90 Z" fill="#FFFFFF" opacity="0.95"/>
+    <path d="M 90 100 C 65 180 85 270 240 315 C 190 310 95 260 85 180 C 80 140 90 115 105 85 Z" fill="#E0F2FE"/>
+
+    <!-- Airplane Icon soaring top-left to right -->
+    <g transform="translate(75, 45) rotate(-35)">
+      <!-- Fuselage -->
+      <path d="M 25 0 L 35 15 L 35 45 L 25 55 L 20 45 L 20 15 Z" fill="#1E3A8A"/>
+      <!-- Main Wings -->
+      <path d="M 0 25 L 25 15 L 45 25 L 30 30 L 25 25 L 15 30 Z" fill="#1E3A8A"/>
+      <!-- Tail Wing -->
+      <path d="M 12 50 L 25 42 L 35 50 L 25 48 Z" fill="#1E3A8A"/>
+      <!-- Cockpit Window detail -->
+      <circle cx="25" cy="10" r="2" fill="#FFFFFF"/>
+    </g>
+
+    <!-- Dynamic 3D Orange Planetary / Orbit Ring -->
+    <!-- Front sweeping arc with width variation -->
+    <path d="M 40 240 C 25 290 80 350 180 365 C 280 380 370 330 380 270 C 385 240 370 210 345 190 C 355 210 360 240 345 265 C 320 310 245 345 170 335 C 105 325 55 285 55 245 C 55 235 50 238 40 240 Z" fill="url(#ringGrad)"/>
+
+    <!-- Inner highlight on orange ring -->
+    <path d="M 60 260 C 90 310 180 345 260 340 C 320 335 360 295 370 265 C 355 290 305 325 245 325 C 160 325 90 295 60 260 Z" fill="#FED7AA" opacity="0.6"/>
+  </g>
+</svg>
